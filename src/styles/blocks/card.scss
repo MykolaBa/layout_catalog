@@ -6,8 +6,8 @@
   background-color: $bg-color-card;
 
   transition:
-    transform 300ms ease,
-    color 300ms ease;
+    transform 300ms,
+    color 300ms;
   transform-origin: center;
 
   &__image {
@@ -27,7 +27,7 @@
     padding-left: 16px;
   }
 
-  &__description-text {
+  &__title {
     width: 166px;
     margin: 0;
 
@@ -36,7 +36,7 @@
     line-height: 18px;
     color: $color-text-prod-rewiew-price;
 
-    transition: color 300ms ease;
+    transition: color, 300ms;
   }
 
   &__product-code {
@@ -117,26 +117,26 @@
     text-transform: uppercase;
 
     transition:
-      background-color 300ms ease,
-      color 300ms ease,
-      border-color 300ms ease;
+      background-color 300ms,
+      color 300ms,
+      border-color 300ms;
 
     &:hover {
       cursor: pointer;
       border: 1px solid $button-border-color;
-      color: $button_hover-text;
-      background-color: $button_hover-bg;
+      color: $button-hover-text;
+      background-color: $button-hover-bg;
     }
   }
 
   &:hover {
-    color: $description_hover;
+    color: $description-hover;
     cursor: pointer;
     transform: scale(1.2);
 
-    .card__description-text:hover {
-      color: $description_hover;
-      transition: color 300ms ease;
+    .card__title {
+      color: $description-hover;
+      transition: color, 300ms;
     }
   }
 }
