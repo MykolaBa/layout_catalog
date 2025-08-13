@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color, 300ms;
+    transition: color 300ms;
 
     &--active {
       color: $blue;

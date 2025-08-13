@@ -5,9 +5,7 @@
 
   background-color: $bg-color-card;
 
-  transition:
-    transform 300ms,
-    color 300ms;
+  transition: transform 300ms color 300ms;
   transform-origin: center;
 
   &__image {
@@ -36,7 +34,7 @@
     line-height: 18px;
     color: $color-text-prod-rewiew-price;
 
-    transition: color, 300ms;
+    transition: color 300ms;
   }
 
   &__product-code {
@@ -116,10 +114,7 @@
     color: $button-text-color;
     text-transform: uppercase;
 
-    transition:
-      background-color 300ms,
-      color 300ms,
-      border-color 300ms;
+    transition: background-color 300ms color 300ms border-color 300ms;
 
     &:hover {
       cursor: pointer;
@@ -130,13 +125,12 @@
   }
 
   &:hover {
-    color: $description-hover;
     cursor: pointer;
     transform: scale(1.2);
 
     .card__title {
       color: $description-hover;
-      transition: color, 300ms;
+      transition: color 300ms;
     }
   }
 }
